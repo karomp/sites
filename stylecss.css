@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+:root {
+    --bg-main: #161616;
+    --main-color: #ececec;
+    --accent-color: #d1d1d1;
+    --link-color: #a2b97d;
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    font-size: 13px;
+    overflow-x:hidden;
+    font-family:"Open Sans", sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+    transition: 1s;
+}
+
+.header {
+    width:100%;
+    background:black;
+    padding: 1rem;
+    top:0;
+    position:fixed;
+    left:0;
+    margin:0 auto;
+    z-index:99;
+    overflow:hidden;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    font-family: "Science Gothic", sans-serif;
+    color: var(--main-color);
+    cursor:default;
+    letter-spacing:2px;
+}
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  letter-spacing:1px;
+}
+
+.header li {
+  float: left;
+  padding:1rem;
+}
+
+.header li {
+  display: block;
+  color: var(--link-color);
+  text-align: center;
+  text-decoration: none;
+  font-family: "Science Gothic", sans-serif;
+  letter-spacing: 1px;
+}
+
+
+.headimage {
+    width:100%;
+    height:500px;
+    background-image: url("illustrations/muutos1920.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    margin:0 auto;
+    overflow:hidden;
+    padding:0;
+    left:0;
+    top:4rem;
+    background-position-x: center;
+    background-position-y:top;
+}
+.main {
+    width: 100%;
+    margin:0 auto;
+    margin-top:25rem;
+    color: var(--main-color);
+    background: var(--bg-main);
+    left:0;
+    position:absolute;
+    bottom:0;
+    padding:1rem;
+    top:10rem;
+    text-align:center;
+}
+
+.main h3 {
+  font-family: "Science Gothic", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: black;
+  border: 2px solid var(--link-color);
+  padding:.7rem;
+  font-size:2.2rem;
+  text-align:center;
+  margin:0 auto;
+  max-width: min-content;
+  transform: rotate(-5deg);
+  margin-top:-2rem;
+  margin-bottom:2rem;
+  box-shadow: 2px 5px 5px black;
+}
+.gallery-column img {
+  box-shadow:0px 5px 10px black;
+  border:1px solid black;
+  width:500px;
+  height:auto;
+  vertical-align: middle;
+}
+
+.nav-link, .nav-link.active, .nav-tabs {
+  color: var(--link-color) !important;
+  background: none !important;
+  border:none !important;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.nav-link:hover, .nav-tabs button:hover {
+  color: var(--main-color) !important;
+  text-decoration: underline;
+}
+
+.information-container {
+  width:90%;
+  display:inline-flex;
+  margin:0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items:top;
+  margin-bottom:2rem;
+
+}
+.gallery {
+  display: flex;
+  justify-content:center;
+  align-items:top;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.gallery-column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.gallery-item {
+  padding:1rem;
+  margin:0 auto;
+}
+
+.card-title {
+  text-transform: uppercase;
+  color:var(--main-color) !important;
+  font-family: "Science Gothic", sans-serif;
+}
+.card-text {
+  color:var(--main-color);
+  font-family:"Open Sans", sans-serif;
+  padding:.5rem;
+  text-align: left;
+  background-color:black;
+}
+.card-body {
+  background-color:black;
+  color:var(--main-color);
+}
+.card {
+  border-radius:0 !important;
+  border:1px solid var(--link-color) !important;
+  background-color:black !important;
+}
+.card img {
+  border-right:1px solid var(--link-color);
+}
+.accordion, .accordion-item, .accordion-header, .accordion-button {
+  background:none !important;
+  border:none !important;
+  color:var(--main-color) !important;
+  text-align: left;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-active-icon:none;
+  --bs-accordion-btn-icon:none;
+  --bs-accordion-btn-padding-x: .1rem;
+  --bs-accordion-btn-padding-y: 0;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

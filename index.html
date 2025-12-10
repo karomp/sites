@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylecss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="header"><div class="row">
+    <h1 class="col-8">Portfolio</h1>
+    <div class="col-4">
+    <ul class="nav nav-pills justify-content-end" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="grafiikka-tab" data-bs-toggle="pill" data-bs-target="#grafiikka" aria-controls="grafiikka" type="button" role="tab" aria-selected="true">Graphics</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="illustration-tab" data-bs-toggle="pill" data-bs-target="#illustration" aria-controls="illustration" type="button" role="tab" aria-selected="false" onclick="document.getElementById('h3i').style.transform = 'rotate(5deg)'">Illustrations</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="info-tab" data-bs-toggle="pill" data-bs-target="#info" aria-controls="info" type="button" role="tab" aria-selected="false" onclick="document.getElementById('h3i2').style.transform = 'rotate(0deg)'">Information</button>
+        </li>
+    </ul></div>
+</div></div><div class="row"><div class="headimage col-12"></div></div>
+
+  <div class="main"><div class="row">
+<!--- OSIOT -->
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="grafiikka" role="tabpanel" aria-labelledby="grafiikka-tab" tabindex="0">
+    <h3>Graphics</h3>
+    <img src="grafiikka/random06.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/random02.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/random04.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/random07.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/random01.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/random03.png" width="500" height="auto" loading="lazy">
+    <img src="grafiikka/THIRSTY-ad.gif" width="720" height="auto" loading="lazy">
+    <img src="grafiikka/visit.gif" width="720" height="auto" loading="lazy">
+  </div>
+  <div class="tab-pane fade" id="illustration" role="tabpanel" aria-labelledby="illustration-tab" tabindex="0">
+    <h3 id="h3i">Illustrations</h3>
+    <div class="gallery">
+    <div class="gallery-column">
+    <div class="gallery-item"><img src="illustrations/ares.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/ldpdl2.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/nastya.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/samedi.png" loading="lazy"></div></div>
+    <div class="gallery-column">
+    <div class="gallery-item"><img src="illustrations/anything.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/mercs.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/locus.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/ruination.png" loading="lazy"></div></div>
+    <div class="gallery-column">
+    <div class="gallery-item"><img src="illustrations/phyre.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/day11.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/amaurot.png" loading="lazy"></div>
+    <div class="gallery-item"><img src="illustrations/dollhouse.png" loading="lazy">
+    <div class="gallery-item"><img src="illustrations/kyrie.png" loading="lazy"></div></div>
+  </div></div>
+  </div>
+  <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab" tabindex="0">
+    <h3 id="h3i2">Information</h3>
+    <div class="information-container"><div class="row">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="row g-0"><div class="col-md-4"><img src="illustrations/disquiet2.png" class="img-fluid"></div><div class="col-md-8">
+      <div class="card-body"><h5 class="card-title">Karo M.P. -- artist, designer, programmer</h5>
+      <p class="card-text">Hey there and thanks for checking this site out! You're probably here because I sent you a CV so I won't bore you too much with things I already said there. <b>TLDR;</b> I like learning, and anything related to art and design. I'm also into languages, whether they're used for communicating with people or with computers.
+        <br>
+      <br><b>Contact:</b> <i>karomikaelArt@proton.me</i>
+      <br>
+      <br><b>Coding:</b> This site has been coded by me using Bootstrap and the code is available here on github. <a href="https://pastebin.com/u/harbingersecho" target="_blank" title="pastebin, opens in new window" style="color:var(--link-color);font-weight:600;">Here</a> is some more of my coding, but a lot of it is old and created for a very specific website that does not allow for CSS and JavaScript, and is thus only Bootstrap and HTML.
+      <br><br><b>Graphic Design:</b> The graphics shown on this site are quick examples created by me for this site in Photoshop using royalty free assets, and are not actual adverts/posters for products, entities etc.
+      <br><br><b>I don't use AI for anything I make, write or code.</b> Good or bad, it's all me I'm afraid.</p>
+    </div></div></div></div></div>
+    <div class="col-lg-4"><div class="card">
+      <div class="card-body"><h5 class="card-title">Stats</h5>
+        <p class="card-text"><b>Languages:</b> Finnish, English, Swedish, basic Russian
+        <br><br><b>Programming Languages:</b> JavaScript, HTML, CSS, PHP, MySQL
+        <br><br><b>Programs:</b> Adobe Photoshop, Adobe inDesign, Adobe After Effects, Adobe Premiere, Adobe Dreamweaver, Visual Studio Code, PowerShell, FileZilla etc. <br><small><i>Not a program, but I also know WordPress since everyone's so into it. Canva too.</i></small></p>
+      <h5 class="card-title">Education</h5>
+        <p class="card-text"><b>Stadin AO</b> - Vocational Qualification in Media and Visual Expression [<i>Publication Production</i>], GPA 4.22/5, 2025
+        <div class="accordion accordion-flush" id="accordionAMK"><div class="accordion-item"><h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <b>+ Metropolia Avoin AMK</b>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAMK">
+      <div class="accordion-body">
+      <p>- Introduction to Cybersecurity<br>- PHP-ohjelmointi<br>- JavaScript Essentials</p>
+      </div>
+    </div>
+  </div></div>
+      </div></div></div></div></div></div>
+</div></div></div>
+
+</body>
+</html> 
